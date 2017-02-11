@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="成祈,成祈股份有限公司,chengci,TOTAL,cray valley,sartomer"/>
+<meta name="Description" content="成祈是由一群化工化學本科系菁英組成的銷售團隊，經銷代理國內外進口特殊的原物料，並提供接著劑、塗料及油墨配方之專業諮詢服務。"/><link rel="stylesheet" type="text/css" href="css/index.css" />
+<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+<link rel="stylesheet" type="text/css" href="css/aboutus.css" />
+<head>
+	<title>成祈股份有限公司</title>
+	<link rel="shortcut icon" href="img/LOGO/CHENG-CI-LOGO.png">
+<style type="text/css">
+
+</style>
+</head>
+<body>
+	<div id="top">
+		<div id="logo">
+			<img src="img/LOGO/CHENG-CI-LOGO.png" id="imgStyle">
+			<div id='company'>
+				<div style='font-family: Impact;font-size:19px;'><b>成祈股份有限公司</b></div>
+				<div style='font-size: 14px;margin-top: 5px;font-family: Times;'>CHENG CI CORPORATION</div>
+			</div>
+		</div>
+		<div id="menuTop">
+			<section class="section section--menu" id="Sebastian">
+					<nav class="menu menu--sebastian">
+						<ul class="menu__list">
+							<li class="menu__item menu__item--current" id="about">
+								<a href="#" class="menu__link"><!-- CHENG CI 關於成祈<br>ABOUT -->
+									<span style='font-family:Times;'>CHENG CI </span>關於成祈<br>
+									<span class='entext'>ABOUT</span>
+								</a>
+							</li>
+							<li class="menu__item">
+								<a href="#" class="menu__link" id='product1'>
+									<span style='font-family:Times;font-size: 13px;'>TOTAL CRAY VALLEY</span><br>
+									產品資訊<br>
+									<span class='entext'>PRODUCT</span>
+								</a>
+							</li>
+							<li class="menu__item">
+								<a href="#" class="menu__link" id='product2'>
+									<span style='font-family:Times;font-size: 13px;'>ARKEMA SARTOMER</span><br>
+									產品資訊<br>
+									<span class='entext'>PRODUCT</span>
+								</a>
+							</li>
+							<li class="menu__item">
+								<a href="#" class="menu__link" id='product3'>特殊原料產品資訊<br>
+									<span class='entext'>PRODUCT</span>
+								</a>
+							</li>
+						</ul>
+					</nav>
+				</section>
+		<div>
+	</div>
+	<script src="js/classie.js"></script>
+	<script src="js/clipboard.min.js"></script>
+	<script src="js/jquery-2.2.0.min.js"></script>
+	<script>
+	(function() {
+		[].slice.call(document.querySelectorAll('.menu')).forEach(function(menu) {
+			var menuItems = menu.querySelectorAll('.menu__link'),
+				setCurrent = function(ev) {
+					ev.preventDefault();
+
+					// var item = ev.target.parentNode; // li
+					var item = ev.target.closest('li');
+
+					// return if already current
+					if (classie.has(item, 'menu__item--current')) {
+						return false;
+					}
+					// remove current
+					classie.remove(menu.querySelector('.menu__item--current'), 'menu__item--current');
+					// set current
+					classie.add(item, 'menu__item--current');
+				};
+
+			[].slice.call(menuItems).forEach(function(el) {
+				el.addEventListener('click', setCurrent);
+			});
+		});
+
+		[].slice.call(document.querySelectorAll('.link-copy')).forEach(function(link) {
+			link.setAttribute('data-clipboard-text', location.protocol + '//' + location.host + location.pathname + '#' + link.parentNode.id);
+			new Clipboard(link);
+			link.addEventListener('click', function() {
+				classie.add(link, 'link-copy--animate');
+				setTimeout(function() {
+					classie.remove(link, 'link-copy--animate');
+				}, 300);
+			});
+		});
+	})(window);
+	// 首頁
+	$('#logo').bind('touchend click',function(evt){
+		location.replace("index.html");
+	})
+	// 關於成祈
+	$('#about').bind('touchend click',function(evt){
+		location.replace("aboutus.html");
+	})
+	// CRAY VALLEY TOTAL products
+	$('#product1').bind('touchend click',function(evt){
+		location.replace("product_CVT.html");
+	})
+	// SARTOMER ARKEMA products
+	$('#product2').bind('touchend click',function(evt){
+		location.replace("product_SA.html");
+	})
+	// other products
+	$('#product3').bind('touchend click',function(evt){
+		location.replace("product_other.html");
+	})
+	</script>
+	<hr class="hr">
+	<!-- 內容 -->
+	<div id='aboutContent'>
+		<div class="companyInfo">
+			<div id="c1">公司介紹<br><span>CHENG CI'S PROFILE</span></div>
+			<div id="c2">成祈是由一群化工化學本科系菁英組成的銷售團隊，經銷代理國內外進口特殊的原物料，並提供接著劑、塗料及油墨配方之專業諮詢服務。</div>
+		</div>
+		<div class="companyInfo2">
+			<div id="c1" style="background: rgba(143, 188, 143, 0.6);height:140px;padding-top: 20px;">經銷代理<br><span>Distribution Products</span></div>
+			<div id="c2" style='height: 140px;line-height:16px;padding-top: 10px;'>
+				<div style='position: absolute;width: 240px;'>
+					<img src='img/LOGO/TCV-LOGO.png' width='120px'><br>
+					<span>石油樹脂 Hydrocarbon Resin<br>SMA 苯乙烯-馬林酸酐樹脂 Styrene-Maleic Anhydride Copolymer Resin<br>多官能基液態聚丁二烯 Liquid Functional Group Polybutadiene</span>
+				</div>
+				<div style='position: absolute;width: 200px;margin-left: 260px;'>
+					<img src='img/LOGO/SARTOMER.png' height='30px'><br>
+					<span>特種丙烯酸酯<br>甲基丙烯酸酯<br>單體<br>寡聚物</span>
+				</div>
+			</div>
+		</div>
+		<div class="companyInfo3">
+			<div id="c1">服務據點<br><span>Service Locations</span></div>
+			<div id="c2">地址：台北市大同區民權西路<span style='font-family: Times;'>136</span>號<span style='font-family: Times;'>9</span>樓之<span style='font-family: Times;'>6</span></span>
+				<br><span>電話：<span style='font-family: Times;'>(02)2552-8200</span>
+						<span style='margin-left: 20px;'>統編：<span style='font-family: Times;'>42843714</span>
+					</span>
+				<br><span>傳真：<span style='font-family: Times;'>(02)2552-8233</span>
+						<span style='margin-left: 20px;font-family: Times;'>Email：nalgae.chengci@gmail.com 陳先生</span>
+					</span>
+			</div>
+		</div>
+	</div>
+	<div id="bottom">
+		<div id='text1'>
+			<span>成祈股份有限公司</span>
+			<span>地址：台北市大同區民權西路<span style='font-family: Times;'>136</span>號<span style='font-family: Times;'>9</span>樓之<span style='font-family: Times;'>6</span></span>
+			<span>電話：<span style='font-family: Times;'>(02)2552-8200</span></span>
+			<span>傳真：<span style='font-family: Times;'>(02)2552-8233</span></span>
+		</div>
+		<div id='text1' style='margin-top: -10px;font-family: Times;'>
+			<span>CHENG CI CORPORATION</span>
+			<span>9F.-6, No.136, Minquan W. Rd., Datong Dist., Taipei City 103, Taiwan (R.O.C.)</span>
+			<span>TEL：+886-2-2552-8200</span>
+			<span>FAX：+886-2-2552-8233</span>
+		</div>
+	</div>
+	
+</body>
+<script>
+$(document).ready(function(){
+	var contentH = $(window).height()-100-65;
+	$('#aboutContent').height(contentH);
+})
+</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-76383527-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</html>
