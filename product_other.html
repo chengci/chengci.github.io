@@ -160,6 +160,7 @@ body{
 			</ol>
 		</div>
 		<a href='#three'><div class='q' id='b'>特殊水性處理劑 <br>Special water-based primer</div></a>
+		<a href='#four'><div class='q' id='b'>水性 PU 樹脂 <br></div></a>
 
 	</div>
 	<div id='contentArea'>
@@ -239,7 +240,17 @@ body{
 				<td>65000~70000</td>
 			</tr>
 		</table>
-		
+		<div id='4' class='title' style='font-size:15px;color:#1182B1;margin-top:0px;'>水性 PU 樹脂</div>
+		<table style='margin-bottom: 10px;margin-top:10px;' id='PU'>
+			<tr>
+				<td width='150px'>牌號
+				<td>外觀</td>
+				<td>固成份(%)</td>
+				<td>黏度(cps)</td>
+				<td>pH</td>
+				<td>特性及應用</td>
+			</tr>
+		</table>
 	</div>
 	<div id="bottom">
 		<div id='text1'>
@@ -265,11 +276,12 @@ $(document).ready(function(){
 	$('#contentArea').width(contentW);
 	$('table').width(contentW-20);
 	$('#oligomers').hide();
+	PU();
 })
 function changeColor(evt){
 	$('.check').removeClass('check');
 	$(evt).addClass('check');
-	if ($(evt).hasClass("1") || $(evt).hasClass("2")  || evt.id == 'a') {
+	if ($(evt).hasClass("1") || $(evt).hasClass("2")  || evt.id == 'a' || $(evt).hasClass("4")  ) {
 		$('#a').addClass('check');
 		$('#oligomers').hide();
 		$('#monomers').show();
@@ -277,6 +289,91 @@ function changeColor(evt){
 		$('#b').addClass('check');
 		// $('#monomers').hide();
 		$('#oligomers').show();
+	}
+}
+function PU(){
+	var first = [];
+	var second = [];
+	var third = [];
+	var four = [];
+	var five = [];
+	var six = [];
+
+	first[0]="CC0687";
+	first[1]="CC0689";
+	first[2]="CC1688";
+	first[3]="CC765";
+	first[4]="CC7667";
+	first[5]="CC7967";
+	first[6]="CC8687";
+	first[7]="CC9667";
+	first[8]="CC9668";
+	first[9]="CC9687";
+
+	second[0]="乳白";
+	second[1]="乳白";
+	second[2]="乳白";
+	second[3]="乳白";
+	second[4]="乳白";
+	second[5]="乳白";
+	second[6]="乳白";
+	second[7]="乳白";
+	second[8]="乳白";
+	second[9]="乳白";
+
+	third[0]="36";
+	third[1]="35";
+	third[2]="36";
+	third[3]="35";
+	third[4]="30";
+	third[5]="30";
+	third[6]="40";
+	third[7]="31";
+	third[8]="43";
+	third[9]="31";
+
+
+	four[0]="≦100 cps";
+	four[1]="≦100 cps";
+	four[2]="≦100 cps";
+	four[3]="≦100 cps";
+	four[4]="≦100 cps";
+	four[5]="≦100 cps";
+	four[2]="≦100 cps";
+	four[3]="≦100 cps";
+	four[4]="≦100 cps";
+	four[5]="≦100 cps";
+
+	five[0]="7~8";
+	five[1]="7~8";
+	five[2]="7~8";
+	five[3]="7~8";
+	five[4]="7~8";
+	five[5]="7~8";
+	five[6]="7~8";
+	five[7]="7~8";
+	five[8]="7~8";
+	five[9]="7~8";
+
+	six[0]="密著佳、乾燥快、耐黃變、抗回黏與顏料相容性佳。推薦用於無機底材、玻璃等。";
+	six[1]="韌性佳、抗回黏、耐黃變與耐水洗,推薦用於織物。";
+	six[2]="高光澤和硬度、耐磨性佳、乾燥快、密著佳。推薦用於印刷。";
+	six[3]="耐水分解性好、不黃變、耐光性好。具有強韌皮膜、屈曲性佳、賦與柔軟手感。聚丁二烯主體。";
+	six[4]="高光澤和硬度、耐水性佳、耐化性佳、抗回黏性、耐鹽霧佳、耐黃變、密著佳。推薦用於金屬基材。";
+	six[5]="高光澤和重塗性、耐水性佳、抗回黏性、密著佳、耐黃變、耐鹽霧佳。推薦用於金屬基材。";
+	six[6]="耐無鉛汽油、銀粉漆排列效果佳、密著佳。耐黃變、耐化性佳、耐水性佳、高光澤和硬度。推薦用於塑料基材。";
+	six[7]="高光澤和硬度、耐溶劑、上塗性、離型佳。推薦用於熱轉印。";
+	six[8]="室溫成膜、高光澤、抗刮性佳、抗回黏、砂磨性佳。推薦用於木器漆。";
+	six[9]="高光澤和韌性佳、耐溶劑、不易殘膠。推薦用於噴塗型水性可剝膠。";
+	for(var i=0 ; i<first.length ; i++){
+		$('#PU').append('<tr>'+
+							'<td>'+first[i]+'</td>'+
+							'<td>'+second[i]+'</td>'+
+							'<td>'+third[i]+'</td>'+
+							'<td>'+four[i]+'</td>'+
+							'<td>'+five[i]+'</td>'+
+							'<td>'+six[i]+'</td>'+
+						'</tr>')
 	}
 }
 </script>
