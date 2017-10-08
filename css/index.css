@@ -322,7 +322,7 @@ body{
     width: 100%;
     height: auto;
     left: 0;
-    top: 600px;
+    top: 620px;
 }
 div#bottom {
     background-image: linear-gradient(#521a73 5%, rgba(82, 26, 115, 0.61) 70%,rgba(82, 26, 115, 0.45) 100%);
@@ -347,7 +347,7 @@ div#bottom {
     overflow-y: auto;
     min-width: 250px;
     padding-top: 20px;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
     margin-right: 20px;
     font-size: 20px;
 }
