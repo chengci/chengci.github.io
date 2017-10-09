@@ -281,7 +281,7 @@ $(document).ready(function(){
 function changeColor(evt){
 	$('.check').removeClass('check');
 	$(evt).addClass('check');
-	if ($(evt).hasClass("1") || $(evt).hasClass("2")  || evt.id == 'a' || $(evt).hasClass("4")  ) {
+	if ($(evt).hasClass("1") || $(evt).hasClass("2")  || evt.id == 'a' ) {
 		$('#a').addClass('check');
 		$('#oligomers').hide();
 		$('#monomers').show();
