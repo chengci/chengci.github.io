@@ -446,5 +446,5 @@ li:first-child>a,li:last-child>a{
 li.list:before {
     content: "•"; /* Insert content that looks like bullets */
     padding-right: 8px;
-    color: blue; /* Or a color you prefer */
+    /*color: blue;  Or a color you prefer */
 }
