@@ -459,7 +459,7 @@ li.list:before {
 	margin-left:-18px;
 	height: 160px;
 	overflow-y: auto;
-	line-height: 17px;
+	line-height: 20px;
 }
 .newsUl::-webkit-scrollbar-thumb {
     width: 0px;
