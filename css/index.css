@@ -441,4 +441,5 @@ li:first-child>a,li:last-child>a{
 }
 .list{
 	display: block;
+	font-size: 15px;
 }
