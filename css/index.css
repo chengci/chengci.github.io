@@ -450,3 +450,21 @@ li.list:before {
     padding-right: 8px;
     /*color: blue;  Or a color you prefer */
 }
+.newsUl{
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	list-style-type: circle;
+	margin-left:-18px;
+	height: 160px;
+	overflow-y: auto;
+	line-height: 17px;
+}
+.newsUl::-webkit-scrollbar-thumb {
+    width: 0px;
+    background-color: rgba(0,0,0,0.498);
+}
+.newsUl::-webkit-scrollbar {
+    width: 4px;
+}
