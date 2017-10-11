@@ -343,8 +343,8 @@ div#bottom {
 }
 #leftText {
     width: 30%;
-    overflow-x: hidden;
-    overflow-y: auto;
+    /*overflow-x: hidden;
+    overflow-y: auto;*/
     min-width: 250px;
     padding-top: 20px;
     margin-bottom: 10px;
