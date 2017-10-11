@@ -443,3 +443,8 @@ li:first-child>a,li:last-child>a{
 	display: block;
 	font-size: 15px;
 }
+li.list:before {
+    content: "•"; /* Insert content that looks like bullets */
+    padding-right: 8px;
+    color: blue; /* Or a color you prefer */
+}
