@@ -170,8 +170,8 @@ $(document).ready(function(){
 	var contentH = $(window).height()-100-65;
 	$('#aboutContent').height(contentH);
 
-	var bodyH=window.innerHeight;
-	var remainH=bodyH-80-15-contentH;
+	var bodyH=$(window).height();
+	var remainH=bodyH-80-15-contentH-$("#bottomArea").height();
 	if(remainH/bodyH<0.2) $("#bottomArea").css("bottom","0px");
 })
 </script>
