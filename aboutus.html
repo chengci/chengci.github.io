@@ -1,123 +1,219 @@
 <!DOCTYPE html>
-<html>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="成祈,成祈股份有限公司,chengci,TOTAL,cray valley,sartomer"/>
-<meta name="Description" content="成祈是由一群化工化學本科系菁英組成的銷售團隊，經銷代理國內外進口特殊的原物料，並提供接著劑、塗料及油墨配方之專業諮詢服務。"/><link rel="stylesheet" type="text/css" href="css/index.css" />
-<link rel="stylesheet" type="text/css" href="css/normalize.css" />
-<link rel="stylesheet" type="text/css" href="css/aboutus.css" />
-<head>
-	<title>成祈股份有限公司</title>
-	<link rel="shortcut icon" href="img/LOGO/CHENG-CI-LOGO.png">
-<style type="text/css">
-
-</style>
-</head>
-<body>
-	<div id="top">
-		<div id="logo">
-			<img src="img/LOGO/CHENG-CI-LOGO.png" id="imgStyle">
-			<div id='company'>
-				<div style='font-family: Impact;font-size:19px;'><b>成祈股份有限公司</b></div>
-				<div style='font-size: 14px;margin-top: 5px;font-family: Times;'>CHENG CI CORPORATION</div>
-			</div>
-		</div>
-		<div id="menuTop">
-			<section class="section section--menu" id="Sebastian">
-					<nav class="menu menu--sebastian">
-						<ul class="menu__list">
-							<li class="menu__item menu__item--current" id="about">
-								<a href="#" class="menu__link"><!-- CHENG CI 關於成祈<br>ABOUT -->
-									<span style='font-family:Times;'>CHENG CI </span>關於成祈<br>
-									<span class='entext'>ABOUT</span>
-								</a>
-							</li>
-							<li class="menu__item">
-								<a href="#" class="menu__link" id='product1'>
-									<span style='font-family:Times;font-size: 13px;'>TOTAL CRAY VALLEY</span><br>
-									產品資訊<br>
-									<span class='entext'>PRODUCT</span>
-								</a>
-							</li>
-							<li class="menu__item">
-								<a href="#" class="menu__link" id='product2'>
-									<span style='font-family:Times;font-size: 13px;'>ARKEMA SARTOMER</span><br>
-									產品資訊<br>
-									<span class='entext'>PRODUCT</span>
-								</a>
-							</li>
-							<li class="menu__item">
-								<a href="#" class="menu__link" id='product3'>特殊原料產品資訊<br>
-									<span class='entext'>PRODUCT</span>
-								</a>
-							</li>
-						</ul>
-					</nav>
-				</section>
-		<div>
-	</div>
-	<script src="js/classie.js"></script>
-	<script src="js/clipboard.min.js"></script>
-	<script src="js/jquery-2.2.0.min.js"></script>
-	<script>
-	(function() {
-		[].slice.call(document.querySelectorAll('.menu')).forEach(function(menu) {
-			var menuItems = menu.querySelectorAll('.menu__link'),
-				setCurrent = function(ev) {
-					ev.preventDefault();
-
-					// var item = ev.target.parentNode; // li
-					var item = ev.target.closest('li');
-
-					// return if already current
-					if (classie.has(item, 'menu__item--current')) {
-						return false;
-					}
-					// remove current
-					classie.remove(menu.querySelector('.menu__item--current'), 'menu__item--current');
-					// set current
-					classie.add(item, 'menu__item--current');
-				};
-
-			[].slice.call(menuItems).forEach(function(el) {
-				el.addEventListener('click', setCurrent);
-			});
-		});
-
-		[].slice.call(document.querySelectorAll('.link-copy')).forEach(function(link) {
-			link.setAttribute('data-clipboard-text', location.protocol + '//' + location.host + location.pathname + '#' + link.parentNode.id);
-			new Clipboard(link);
-			link.addEventListener('click', function() {
-				classie.add(link, 'link-copy--animate');
-				setTimeout(function() {
-					classie.remove(link, 'link-copy--animate');
-				}, 300);
-			});
-		});
-	})(window);
-	// 首頁
-	$('#logo').bind('touchend click',function(evt){
-		location.replace("index.html");
-	})
-	// 關於成祈
-	$('#about').bind('touchend click',function(evt){
-		location.replace("aboutus.html");
-	})
-	// CRAY VALLEY TOTAL products
-	$('#product1').bind('touchend click',function(evt){
-		location.replace("product_CVT.html");
-	})
-	// SARTOMER ARKEMA products
-	$('#product2').bind('touchend click',function(evt){
-		location.replace("product_SA.html");
-	})
-	// other products
-	$('#product3').bind('touchend click',function(evt){
-		location.replace("product_other.html");
-	})
-	</script>
+	<html lang="zxx" class="no-js">
+	<head>
+		<!-- Site Title -->
+		<title>成祈股份有限公司</title>
+		<!-- meta character set -->
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<!-- Meta Keyword -->
+		<meta name="keywords" content="成祈,成祈股份有限公司,chengci,TOTAL,cray valley,sartomer">
+		<!-- Meta Description -->
+		<meta name="description" content="成祈是由一群化工化學本科系菁英組成的銷售團隊，經銷代理國內外進口特殊的原物料，並提供接著劑、塗料及油墨配方之專業諮詢服務。">
+		<!-- Favicon-->
+		<link rel="shortcut icon" href="img/LOGO/CHENG-CI-LOGO.png">
+		<!-- Mobile Specific Meta -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		
+		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
+			<!--
+			CSS
+			============================================= -->
+			<link rel="stylesheet" href="css/linearicons.css">
+			<link rel="stylesheet" href="css/font-awesome.min.css">
+			<link rel="stylesheet" href="css/bootstrap.css">
+			<link rel="stylesheet" href="css/magnific-popup.css">
+			<link rel="stylesheet" href="css/nice-select.css">	
+			<link rel="stylesheet" href="css/hexagons.min.css">							
+			<link rel="stylesheet" href="css/animate.min.css">
+			<link rel="stylesheet" href="css/owl.carousel.css">
+			<link rel="stylesheet" href="css/main.css">
+			<link rel="stylesheet" type="text/css" href="css/aboutus.css" />
+		</head>
+		<body>	
+			  <header id="header" id="home">
+		  		<div class="header-top">
+		  			<div class="container">
+				  		<div class="row">
+				  			<div class="col-lg-6 col-sm-6 col-4 header-top-left no-padding">
+				  				<ul>
+									<li><a href="https://www.facebook.com/CHENGCI.CORPORATION/"><i class="fa fa-facebook"></i></a></li>
+				  				</ul>
+				  			</div>
+				  			<div class="col-lg-6 col-sm-6 col-8 header-top-right no-padding">
+				  				<a href="tel:+886 2552 8200">+886 2 2552 8200</a>
+				  			</div>
+				  		</div>			  					
+		  			</div>
+				</div>
+			    <div class="container main-menu">
+			    	<div class="row align-items-center justify-content-between d-flex">
+				      <div id="logo">
+				        <a href="index.html"><img src="img/LOGO/CHENG-CI-LOGO.png" alt="成祈股份有限公司" title="成祈股份有限公司" width="50px" /></a>
+				        <div id='company'>
+							<div style='font-family: Impact;font-size:19px;'><b style="color: #4b4849;font-weight:  bold;">成祈股份有限公司</b></div>
+							<div style='font-size: 14px;font-family: Times;'>CHENG CI CORPORATION</div>
+						</div>
+				      </div>
+				      <nav id="nav-menu-container">
+				        <ul class="nav-menu">
+				          <li class="menu-active">
+				          	<a href="index.html">
+				          		<span style='font-family:Times;'>首頁</span><br>
+								<span class='entext'>Home</span>
+							</a>
+						  </li>
+				          <li>
+				          	<a href="aboutus.html">
+				          		<span style='font-family:Times;'>
+				          			<!-- CHENG CI  --></span>關於成祈<br>
+								<span class='entext'>ABOUT</span>
+							</a>
+						  </li>
+						  <li class="menu-has-children">
+						  	<a href="">產品資訊<br>
+								<span class='entext'>PRODUCT</span>
+							</a>
+				            <ul>
+				              <li><a href="product_CVT.html" style='font-family:Times;'>TOTAL CRAY VALLEY</a></li>
+				              <li><a href="product_SA.html">ARKEMA SARTOMER</a></li>
+							  <li><a href="product_other.html">特殊原料產品資訊</a></li>
+				            </ul>
+				          </li>		
+				          <!-- <li>
+				          	<a href="services.html">
+					          	<span style='font-family:Times;'>
+					          		T</span>
+					          	<br>
+					          	<span class='entext'>產品資訊</span>
+					          	<br>
+								<span class='entext' style="top: -16px;">PRODUCT</span>
+				          	</a>
+				      	  </li> 
+				          <li><a href="projects.html">Projects</a></li>
+				          				          
+				          <li><a href="contact.html">Contact</a></li>
+			              <li><a href="elements.html">Elements</a></li>-->
+				        </ul>
+				      </nav><!-- #nav-menu-container -->		    		
+			    	</div>
+			    </div>
+			  </header><!-- #header -->
 	<hr class="hr">
 	<!-- 內容 -->
-	<div id='aboutContent'>
+	<section class="relative" id="home" style="margin-top: 100px;">
+		<div id='aboutContent'>
+			<div class="companyInfo">
+				<div id="c1">公司介紹<br><span>CHENG CI'S PROFILE</span></div>
+				<div id="c2">成祈是由一群化工化學本科系菁英組成的銷售團隊，經銷代理國內外進口特殊的原物料，並提供接著劑、塗料及油墨配方之專業諮詢服務。</div>
+			</div>
+			<div class="companyInfo2">
+				<div id="c1" style="background: rgba(143, 188, 143, 0.6);height:140px;padding-top: 20px;">經銷代理<br><span>Distribution Products</span></div>
+				<div id="c2" style='height: 750px;line-height:16px;'>
+					<div style="margin-top:0px;">
+						<img src='img/LOGO/TCV-LOGO.png' width='150px'><br>
+						<span>石油樹脂 Hydrocarbon Resin
+							<br>SMA 苯乙烯-馬林酸酐樹脂 Styrene-Maleic Anhydride Copolymer Resin
+							<br>多官能基液態聚丁二烯 Liquid Functional Group Polybutadiene
+							<br>(甲基)丙烯酸金屬鹽 Metal (Methyl) Acrylates</span>
+					</div>
+					<div>
+						<img src='img/LOGO/SARTOMER.png' height='40px'><br>
+						<span>特殊單體 (Methyl) Acrylate Monomer
+							<br>寡聚體 (Methyl) Acrylate Oligomer
+							<br>3D 列印樹酯 3D printing for DLP&SLA</span>
+					</div>
+					<div>
+						<img src='img/LOGO/allnex.png' height='50px'><br>
+						<span>水性環氧樹脂分散體與固化劑 Water Borne Epoxy Resins and Hardeners
+							<br>水性聚氨酯分散體 Water Borne Polyurethane Resins
+							<br>水性醇酸和聚酯分散體 Water Borne Alkyd and Polyester Resins
+							<br>水性丙烯酸樹酯 Water Borne Acrylic Resins
+							<br>高固含量甲醚化三聚氰胺樹酯 High Solids Methylated Melamine Resins</span>
+					</div>
+					<div >
+						<img src='img/LOGO/PINSHUO.png' width='120px'><br>
+						<span>導電/防靜電工程塑膠 Conductive/Anti-Static Eng. Plastics
+							<br>導電/防靜電高溫工程塑膠 Conductive/Anti-Static High Temp. Eng. Plastics
+							<br>導電/防靜電泛用級塑膠 Conductive/Anti-Static Domestic Grade Plastic
+							<br>導電/防靜電熱塑彈性塑膠 Conductive/Anti-Static Thermoplastic Elastomer
+							<br>導電/防靜電助劑 Conductive/Anti-Static Auxiliary Class</span>
+					</div>
+				</div>
+			</div>
+			<div class="companyInfo3">
+				<div id="c1" style="height:100px;padding-top: 10px;">服務據點<br><span>Service Locations</span></div>
+				<div id="c2" style="height:100px;">地址：台北市大同區承德路二段<span style='font-family: Times;'>215</span>號<span style='font-family: Times;'>7</span>樓之<span style='font-family: Times;'>2</span></span>
+					<br><span>電話：<span style='font-family: Times;'>(02)2552-8200</span>
+							<span style='margin-left: 20px;'>統編：<span style='font-family: Times;'>42843714</span>
+						</span>
+					<br><span>傳真：<span style='font-family: Times;'>(02)2552-8233</span>
+							<span style='margin-left: 20px;font-family: Times;'>Email：nalgae.chengci@gmail.com 陳先生</span>
+						</span>
+				</div>
+			</div>
+		</div>
+		
+	</section>
+	<!-- start footer Area -->		
+			<footer class="footer-area section-gap">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-5 col-md-6 col-sm-6">
+							<div class="single-footer-widget">
+								<h6>About Us</h6>
+								<div>成祈股份有限公司</div>
+								<div>地址：台北市大同區承德路二段<span style='font-family: Times;flex:0.5;'>215</span>號<span style='font-family: Times;'>7</span>樓之<span style='font-family: Times;'>2</span></div>
+								<div>電話：<span style='font-family: Times;'>(02)2552-8200</span></div>
+								<div>傳真：<span style='font-family: Times;'>(02)2552-8233</span></div>
+								<p class="footer-text">
+									
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved 
+<div style="display: none;">| This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a></div>
+								</p>								
+							</div>
+						</div>
+						<div class="col-lg-5  col-md-6 col-sm-6">
+							<div class="single-footer-widget">
+								<!-- <h6></h6> -->
+								<div style="margin-top: 45px;">CHENG CI CORPORATION</div>
+								<div>7F.-2, No.215, Sec. 2, Chengde Rd., Datong Dist., Taipei City 103, Taiwan (R.O.C.)</div>
+								<div>TEL：+886-2-2552-8200</div>
+								<div>FAX：+886-2-2552-8233</div>
+							</div>
+						</div>						
+						<div class="col-lg-2 col-md-6 col-sm-6 social-widget">
+							<div class="single-footer-widget">
+								<h6>Follow Us</h6>
+								<p>Let us be social</p>
+								<div class="footer-social d-flex align-items-center">
+									<a href="https://www.facebook.com/CHENGCI.CORPORATION/"><i class="fa fa-facebook"></i></a>
+								</div>
+							</div>
+						</div>							
+					</div>
+				</div>
+			</footer>	
+			<!-- End footer Area -->	
+
+			<script src="js/vendor/jquery-2.2.4.min.js"></script>
+			<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script> -->
+			<script src="js/popper.min.js"></script>
+			<script src="js/vendor/bootstrap.min.js"></script>			
+			<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
+  			<script src="js/easing.min.js"></script>			
+			<script src="js/hoverIntent.js"></script>
+			<script src="js/superfish.min.js"></script>	
+			<script src="js/jquery.ajaxchimp.min.js"></script>
+			<script src="js/jquery.magnific-popup.min.js"></script>	
+			<script src="js/owl.carousel.min.js"></script>	
+			<script src="js/hexagons.min.js"></script>							
+			<script src="js/jquery.nice-select.min.js"></script>	
+			<script src="js/jquery.counterup.min.js"></script>
+			<script src="js/waypoints.min.js"></script>							
+			<script src="js/mail-script.js"></script>	
+			<script src="js/main.js"></script>	
+		</body>
+	<!-- <div id='aboutContent'>
 		<div class="companyInfo">
 			<div id="c1">公司介紹<br><span>CHENG CI'S PROFILE</span></div>
 			<div id="c2">成祈是由一群化工化學本科系菁英組成的銷售團隊，經銷代理國內外進口特殊的原物料，並提供接著劑、塗料及油墨配方之專業諮詢服務。</div>
@@ -162,18 +258,9 @@
 				<div>FAX：+886-2-2552-8233</div>
 			</div>
 		</div>
-	</div>
+	</div> -->
 </body>
-<script>
-$(document).ready(function(){
-	var contentH = $(window).height()-100-65;
-	$('#aboutContent').height(contentH);
 
-	var bodyH=$(window).height();
-	var remainH=bodyH-80-15-contentH-$("#bottomArea").height();
-	if(remainH/bodyH<0.2) $("#bottomArea").css("bottom","0px");
-})
-</script>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
