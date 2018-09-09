@@ -2208,8 +2208,11 @@ h1, h2, h3, h4, h5, h6 {
 
 #mobile-nav ul .menu-has-children li a {
   text-transform: none;
+  font-size: 17px;
 }
-
+.menu-has-children ul li a {
+  font-size: 17px;
+}
 #mobile-nav ul .menu-item-active {
   color: #fab700;
 }
@@ -3197,7 +3200,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 .banner-area {
   background: url(../img/bg_chemistry.jpg) bottom;
-  max-height: 600px;
 }
 .nav-menu a{
   font-size: 17px;
@@ -3213,4 +3215,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   height: 180px;
   background-size: contain !important;
   background-repeat: no-repeat !important;
+}
+.home-about-left{
+  font-size: 17px;
 }
