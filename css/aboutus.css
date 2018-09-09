@@ -20,7 +20,7 @@ div#aboutContent {
     top: 130px;
 }
 .companyInfo3{
-    top: 910px;
+    top: 900px;
 }
 #c1{
     height: 80px;
@@ -45,7 +45,7 @@ div#aboutContent {
 }
 #c2,#c2small{
     height: 80px;
-    width: 500px;
+    width: 580px;
     background: rgba(3, 39, 58, 0.17);
     margin: 0 auto;
     line-height: 25px;
@@ -54,7 +54,7 @@ div#aboutContent {
     box-shadow: 7px 7px 8px #C1C1C1;
     border-radius: 10px;
     padding: 10px;
-    margin-left: 0;
+    margin-left: -100;
 }
 #c2>div{
     margin: 15px 0px;
