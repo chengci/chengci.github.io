@@ -1,6 +1,6 @@
 #leftMenu{
 	position: fixed;
-    top: 120px;
+    top: 130px;
     left: 20px;
     height: 220px;
     width: 200px;
@@ -9,9 +9,9 @@
 }
 #contentArea{
 	position: absolute;
-    width: 483px;
+    /*width: 483px;*/
     height: 440px;
-    top: 120px;
+    top: 130px;
     left: 240px;
     /*background: forestgreen;*/
     overflow-x: auto;
