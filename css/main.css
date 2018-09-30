@@ -1948,7 +1948,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .main-menu {
   padding-top: 20px;
-  zoom: 1.2;
+  zoom: 1.5;
 }
 
 #header {
@@ -2017,7 +2017,7 @@ h1, h2, h3, h4, h5, h6 {
   position: absolute;
   display: none;
   top: 100%;
-  left: -70px;
+  left: -120px;
   z-index: 99;
   background: rgba(255, 255, 255, 0.9);
 }
@@ -2044,6 +2044,7 @@ h1, h2, h3, h4, h5, h6 {
 .nav-menu ul li {
   min-width: 180px;
   text-align: left;
+  padding: 5px 0px;
 }
 
 /* Nav Menu Arrows */
@@ -3221,4 +3222,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 .home-about-left{
   font-size: 17px;
+}
+@media (min-width: 992px){
+.container {
+    max-width: 850px;
 }
