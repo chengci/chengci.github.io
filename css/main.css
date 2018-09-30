@@ -3225,5 +3225,5 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 @media (min-width: 992px){
 .container {
-    max-width: 850px;
+    max-width: 770px;
 }
