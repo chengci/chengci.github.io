@@ -3232,15 +3232,15 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 @media (min-width: 768px) {
   .main-menu {
+    max-width: 640px;
+    height: 60px;
     zoom: 1.3;
   }
 }
 @media (min-width: 992px){
-  .container {
-      max-width: 750px;
-      zoom: 1.3;
-  }
   .main-menu{
-      max-width: 550px;
+    max-width: 600px;
+    height: 60px;
+    zoom: 1.3;
   }
 }
