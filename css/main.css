@@ -3225,16 +3225,17 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 @media (min-width: 576px) {
   .container {
-    max-width: 350px;
+    /*max-width: 350px;*/
   }
 }
 
 @media (min-width: 768px) {
   .container {
-    max-width: 530px;
+    /*max-width: 530px;*/
   }
 }
 @media (min-width: 992px){
 .container {
-    max-width: 770px;
+    max-width: 720px;
+    zoom: 1.3;
 }
