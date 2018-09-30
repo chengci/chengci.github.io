@@ -41,8 +41,13 @@ ol>a>li{
     color: red;
 }
 #leftMenu{
-	height: 460px;
+	height: 300px;
 	width: 215px;
+	text-transform: uppercase;
+}
+#menuC{
+	height: 300px;
+	overflow: auto;
 }
 a{
 	color: #4e3c3e;
@@ -51,6 +56,21 @@ body{
 	-webkit-user-select: none;
 	-moz-user-select: none;
 	user-select: none;
+}
+.title{
+	text-transform: uppercase;
+	margin-top: 15px;
+    line-height: 20px;
+}
+f{
+	font-size: 12px;
+    top: -2px;
+    position: relative;
+    margin-left: 2px;
+}
+.q{
+	font-size: 13px;
+	font-weight: normal;
 }
 </style>
 </head>
@@ -114,116 +134,69 @@ body{
 	  </header><!-- #header -->
 	<!-- 內容 -->
 	<div id='leftMenu'>
-		<a href='#one'><div class='q check' id='a' onclick='changeColor(this)'>單體 <br>Monomers</div></a>
-		<div id='monomers'>
-			<ol>
-				<a href='#1'>
-					<li onclick='changeColor(this)' class='1 check'>單官能單體
-						<br>Monofunctional Monomers
-					</li>
-				</a>
-				<a href='#2'>
-					<li onclick='changeColor(this)' class='2'>雙官能單體
-						<br>Difunctional Monomers
-					</li>
-				</a>
-				<a href='#3'>
-					<li onclick='changeColor(this)' class='3'>三官能單體
-						<br>Trifunctional Monomers
-					</li>
-				</a>
-				<a href='#4'>
-					<li onclick='changeColor(this)'  class='4'>高官能單體
-						<br>High Functional Monomers
-					</li>
-				</a>
-				<a href='#5'>
-					<li onclick='changeColor(this)' class='5'>M Cure 樹脂
-						<br>M Cure Resins
-					</li>
-				</a>
-				<a href='#6'>
-					<li onclick='changeColor(this)' class='6'>無甲苯單體
-						<br>Toluene Free Monomers
-					</li>
-				</a>
-			</ol>
-		</div>
-		<a href='#two'><div class='q' id='b' onclick='changeColor(this)'>寡聚物 <br>Oligomers</div></a>
-		<div id='oligomers'>
-			<ol>
-				<a href='#7' onclick='changeColor(this)' class='7'>
-					<li>脂肪族聚氨酯丙烯酸酯寡聚物
-						<br>Aliphatic Urethane Acrylate Oligomers
-					</li>
-				</a>
-				<a href='#8' onclick='changeColor(this)' class='8'>
-					<li>芳香族聚氨酯丙烯酸酯寡聚物
-						<br>Aromatic Urethane Acrylate Oligomers
-					</li>
-				</a>
-				<a href='#9' onclick='changeColor(this)' class='9'>
-					<li>聚酯丙烯酸酯寡聚物
-						<br>Polyester Acrylate Oligomers
-					</li>
-				</a>
-				<a href='#10' onclick='changeColor(this)' class='10'>
-					<li>環氧寡聚物
-						<br>Epoxy Oligomers
-					</li>
-				</a>
-				<a href='#11' onclick='changeColor(this)' class='11'>
-					<li>高性能寡聚物
-						<br>High Performance Oligomers
-					</li>
-				</a>
-				<a href='#12' onclick='changeColor(this)' class='12'>
-					<li>Sarbox 特種寡聚物
-						<br>Sarbox Specialty Oligomers
-					</li>
-				</a>
-			</ol>
+		<div id="menuC">
+			<a href='#1'><div class='q check' id='a' onclick='changeColor(this)' style='margin-bottom:30px;'>導電防靜電PA系列<br>conductive antistatic pa series</div></a>
+			<a href='#2'><div class='q' id='b' onclick='changeColor(this)' style='margin-bottom:80px;'>導電防靜電PC、PC/ABS<br>系列<br>conductive antistatic pc、pc/abs <br>series</div></a>
+			<a href='#3'><div class='q' id='b' onclick='changeColor(this)' style='margin-bottom:60px;'>導電防靜電PPO/PPE系列<br>conductive antistatic ppo/ppe series</div></a>
+			<a href='#4'><div class='q' id='b' onclick='changeColor(this)' style='margin-bottom:30px;'>導電防靜電POM系列<br>conductive antistatic pom series</div></a>
+			<a href='#5'><div class='q' id='b' onclick='changeColor(this)' style='margin-bottom:30px;'>導電防靜電PBT系列<br>conductive antistatic pbt series</div></a>
+			<a href='#6'><div class='q' id='b' onclick='changeColor(this)' style='margin-bottom:120px;'>導電防靜電PPS/PA46/PPA/PEI/PSU<br>/PES/PEEK/鐵氟龍系列<br>
+			conductive antistatic pps/pa46/ppa/pei/psu<br>/pes/peek/teflon series</div></a>
+			<a href='#7'><div class='q' id='b' onclick='changeColor(this)' style='margin-bottom:30px;'>導電防靜電ABS系列<br>conductive antistatic abs series</div></a>
+			<a href='#8'><div class='q' id='b' onclick='changeColor(this)' style='margin-bottom:30px;'>導電防靜電PS系列<br>conductive antistatic ps series</div></a>
+			<a href='#9'><div class='q' id='b' onclick='changeColor(this)' style='margin-bottom:30px;'>導電防靜電PP系列<br>conductive antistatic pp series</div></a>
+			<a href='#10'><div class='q' id='b' onclick='changeColor(this)' style='margin-bottom:30px;'>導電防靜電PE系列<br>conductive antistatic pe series</div></a>
+			<a href='#11'><div class='q' id='b' onclick='changeColor(this)' style='margin-bottom:30px;'>導電防靜電TPE系列<br>conductive antistatic tpe series</div></a>
+			<a href='#12'><div class='q' id='b' onclick='changeColor(this)' style='margin-bottom:30px;'>導電防靜電TPU系列<br>conductive antistatic tpu series</div></a>
+			<a href='#13'><div class='q' id='b' onclick='changeColor(this)' style='margin-bottom:30px;'>導電防靜電PVC系列<br>conductive antistatic pvc series</div></a>
+			<a href='#14'><div class='q' id='b' onclick='changeColor(this)' style='margin-bottom:30px;'>導電防靜電助劑類系列<br>conductive anti-static additives series</div></a>
 		</div>
 	</div>
 	<div id='contentArea'>
-		<div id='one' class='title' style='margin-top:0px;'>單體 Monomers</div>
-		<div id='1' class='title' style='font-size:15px;color:#1182B1;margin-top:0px;'>單官能單體 Monofunctional Monomers</div>
-		<img src='img/monomer1.png' width='100%' style='border:1px solid gray'>
+		<!-- <div id='one' class='title' style='margin-top:0px;'>BeckocureTM 环氧树脂和分散体的胺固化剂</div> -->
+		<div id='1' class='title' style='font-size:15px;color:#1182B1;'>導電防靜電PA系列<br>conductive antistatic pa series</div>
+		<img src='img/PINSHUO/p1.jpg' width='100%'>
 
-		<div id='2' class='title' style='font-size:15px;color:#1182B1;margin-top:0px;'>雙官能單體 Difunctional Monomers</div>
-		<img src='img/monomer2.png' width='100%' style='border:1px solid gray'>
+		<div id='2' class='title' style='font-size:15px;color:#1182B1;'>導電防靜電PC、PC/ABS系列<br>conductive antistatic pc、pc/abs series</div>
+		<img src='img/PINSHUO/p2.jpg' width='100%'>
 
-		<div id='3' class='title' style='font-size:15px;color:#1182B1;margin-top:0px;'>三官能單體 Trifunctional Monomers</div>
-		<img src='img/monomer3.png' width='100%' style='border:1px solid gray'>
+		<div id='3' class='title' style='font-size:15px;color:#1182B1;'>導電防靜電PPO/PPE系列<br>conductive antistatic ppo/ppe series</div>
+		<img src='img/PINSHUO/p3.jpg' width='100%'>
 
-		<div id='4' class='title' style='font-size:15px;color:#1182B1;margin-top:0px;'>高官能單體 High Functional Monomers</div>
-		<img src='img/monomer4.png' width='100%' style='border:1px solid gray'>
+		<div id='4' class='title' style='font-size:15px;color:#1182B1;'>導電防靜電POM系列<br>conductive antistatic pom series</div>
+		<img src='img/PINSHUO/p4.jpg' width='100%'>
 
-		<div id='5' class='title' style='font-size:15px;color:#1182B1;margin-top:0px;'>M Cure 樹脂 M Cure Resins</div>
-		<img src='img/monomer5.png' width='100%' style='border:1px solid gray'>
+		<div id='5' class='title' style='font-size:15px;color:#1182B1;'>導電防靜電PBT系列<br>conductive antistatic pbt series</div>
+		<img src='img/PINSHUO/p5.jpg' width='100%'>
 
-		<div id='6' class='title' style='font-size:15px;color:#1182B1;margin-top:0px;'>無甲苯單體 Toluene Free Monomers</div>
-		<img src='img/monomer6.png' width='100%' style='border:1px solid gray'>
+		<div id='6' class='title' style='font-size:15px;color:#1182B1;'>導電防靜電PPS/PA46/PPA/PEI/PSU/PES/PEEK/鐵氟龍系列<br>
+		conductive antistatic pps/pa46/ppa/pei/psu/pes/peek/teflon series</div>
+		<img src='img/PINSHUO/p6.jpg' width='100%'>
 
-		<div id='two' class='title'>寡聚物 Oligomers</div>
-		<div id='7' class='title' style='font-size:15px;color:#1182B1;margin-top:0px;'>脂肪族聚氨酯丙烯酸酯寡聚物 Aliphatic Urethane Acrylate Oligomers</div>
-		<img src='img/Oligomer1-0-0.png' width='100%' style='border:1px solid gray'>
+		<!-- <div id='two' class='title'>寡聚物 Oligomers</div> -->
+		<div id='7' class='title' style='font-size:15px;color:#1182B1;'>導電防靜電ABS系列<br>conductive antistatic abs series</div>
+		<img src='img/PINSHUO/p7.jpg' width='100%'>
 
-		<div id='8' class='title' style='font-size:15px;color:#1182B1;margin-top:0px;'>芳香族聚氨酯丙烯酸酯寡聚物 Aromatic Urethane Acrylate Oligomers</div>
-		<img src='img/Oligomer1-1.png' width='100%' style='border:1px solid gray'>
+		<div id='8' class='title' style='font-size:15px;color:#1182B1;'>導電防靜電PS系列<br>conductive antistatic ps series</div>
+		<img src='img/PINSHUO/p8.jpg' width='100%'>
 
-		<div id='9' class='title' style='font-size:15px;color:#1182B1;margin-top:0px;'>聚酯丙烯酸酯寡聚物 Polyester Acrylate Oligomers</div>
-		<img src='img/Oligomer2.png' width='100%' style='border:1px solid gray'>
+		<div id='9' class='title' style='font-size:15px;color:#1182B1;'>導電防靜電PP系列<br>conductive antistatic pp series</div>
+		<img src='img/PINSHUO/p9.jpg' width='100%'>
 
-		<div id='10' class='title' style='font-size:15px;color:#1182B1;margin-top:0px;'>環氧寡聚物 Epoxy Oligomers</div>
-		<img src='img/Oligomer3.png' width='100%' style='border:1px solid gray'>
+		<div id='10' class='title' style='font-size:15px;color:#1182B1;'>導電防靜電PE系列<br>conductive antistatic pe series</div>
+		<img src='img/PINSHUO/p10.jpg' width='100%'>
 
-		<div id='11' class='title' style='font-size:15px;color:#1182B1;margin-top:0px;'>高性能寡聚物 Sarbox Specialty Oligomers</div>
-		<img src='img/Oligomer4.png' width='100%' style='border:1px solid gray'>
+		<div id='11' class='title' style='font-size:15px;color:#1182B1;'>導電防靜電TPE系列<br>conductive antistatic tpe series</div>
+		<img src='img/PINSHUO/p11.jpg' width='100%'>
 
-		<div id='12' class='title' style='font-size:15px;color:#1182B1;margin-top:0px;'>Sarbox 特種寡聚物 Sarbox Specialty Oligomers</div>
-		<img src='img/Oligomer5.png' width='100%' style='border:1px solid gray'>
+		<div id='12' class='title' style='font-size:15px;color:#1182B1;'>導電防靜電TPU系列<br>conductive antistatic tpu series</div>
+		<img src='img/PINSHUO/p12.jpg' width='100%'>
 
+		<div id='13' class='title' style='font-size:15px;color:#1182B1;'>導電防靜電PVC系列<br>conductive antistatic pvc series</div>
+		<img src='img/PINSHUO/p13.jpg' width='100%'>
+
+		<div id='14' class='title' style='font-size:15px;color:#1182B1;'>導電防靜電助劑類系列<br>conductive anti-static additives series</div>
+		<img src='img/PINSHUO/p14.jpg' width='100%'>
 	</div>
 </body>
 <script src="js/vendor/jquery-2.2.4.min.js"></script>
@@ -246,7 +219,7 @@ body{
 $(document).ready(function(){
 	var contentH = $(window).height()-130-20;
 	$('#contentArea').height(contentH);
-	var contentW = $(window).width()-240;
+	var contentW = $(window).width()-240-10;
 	$('#contentArea').width(contentW);
 	$('table').width(contentW-20);
 	$('#oligomers').hide();
@@ -254,17 +227,6 @@ $(document).ready(function(){
 function changeColor(evt){
 	$('.check').removeClass('check');
 	$(evt).addClass('check');
-	if ($(evt).hasClass("1") || $(evt).hasClass("2") || $(evt).hasClass("3")|| $(evt).hasClass("4") || $(evt).hasClass("5") || $(evt).hasClass("6") || evt.id == 'a') {
-		$('#a').addClass('check');
-		$('#oligomers').hide();
-		$('#monomers').show();
-		$('#leftMenu').height(460);
-	}else{
-		$('#b').addClass('check');
-		$('#monomers').hide();
-		$('#oligomers').show();
-		$('#leftMenu').height(500);
-	}
 }
 </script>
 <script>
