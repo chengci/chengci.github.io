@@ -3223,6 +3223,17 @@ body.mobile-nav-active #mobile-nav-toggle {
 .home-about-left{
   font-size: 17px;
 }
+@media (min-width: 576px) {
+  .container {
+    max-width: 350px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 530px;
+  }
+}
 @media (min-width: 992px){
 .container {
     max-width: 770px;
