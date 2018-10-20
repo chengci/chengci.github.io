@@ -3204,7 +3204,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 .banner-area {
   background: url(../img/bg_chemistry.jpg) bottom;
   background-size: cover;
-  max-height: 700px;
+  max-height: 500px;
 }
 .nav-menu a{
   font-size: 17px;
