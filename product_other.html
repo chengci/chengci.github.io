@@ -57,7 +57,7 @@ body{
 }
 </style>
 </head>
-<body>	
+<body onselectstart="return false">	
 	  <header id="header" id="home">
   		<div class="header-top">
   			<div class="container">
@@ -244,6 +244,7 @@ body{
 <script src="js/mail-script.js"></script>	
 <script src="js/main.js"></script>	
 <script>
+document.oncontextmenu =new Function("return false;")
 $(document).ready(function(){
 	var contentH = $(window).height()-165-20;
 	$('#contentArea').height(contentH);
