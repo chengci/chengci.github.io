@@ -2,10 +2,9 @@
 	position: fixed;
     top: 165px;
     left: 20px;
-    height: 220px;
+    height: 79%;
     width: 200px;
-    background-color: rgba(248, 198, 47, 0.25);
-    border-radius: 20px;
+    background-color: rgb(65 116 141 / 14%);
 }
 #contentArea{
 	position: absolute;
@@ -17,7 +16,7 @@
     overflow-x: auto;
 }
 .q{
-	background-image: url(../img/icon.png);
+	background-image: url(../img/icon.svg);
 	background-size: 30px 35px;
 	background-repeat: no-repeat;
 	height: 40px;
