@@ -34,19 +34,20 @@
         line-height: 20px;
     }
 
-    #monomers,
-    #oligomers {
-        margin-top: 10px;
-        margin-left: 42px;
-    }
-
     .check {
         color: red;
     }
 
     #leftMenu {
-        /*height: 460px;*/
-        width: 215px;
+        width: 300px;
+    }
+
+    .q {
+        margin-bottom: 40px;
+    }
+
+    #contentArea {
+        left: 340px;
     }
 
     a {
@@ -123,108 +124,88 @@
     </header><!-- #header -->
     <!-- 內容 -->
     <div id='leftMenu'>
-        <a href='#one'>
-            <div class='q check' id='a' onclick='changeColor(this)'>單體 <br>Monomers</div>
+        <a href='#three'>
+            <div class='q check' onclick='changeColor(this)' style='margin-bottom: 15px;'>水性NBR橡膠 <br>NBR Latex</div>
         </a>
-        <div id='monomers'>
-            <ol>
-                <a href='#1'>
-                    <li onclick='changeColor(this)' class='1 check'>單官能單體
-                        <br>Monofunctional Monomers
-                    </li>
-                </a>
-                <a href='#2'>
-                    <li onclick='changeColor(this)' class='2'>雙官能單體
-                        <br>Difunctional Monomers
-                    </li>
-                </a>
-                <a href='#3'>
-                    <li onclick='changeColor(this)' class='3'>三官能單體
-                        <br>Trifunctional Monomers
-                    </li>
-                </a>
-                <a href='#4'>
-                    <li onclick='changeColor(this)' class='4'>高官能單體
-                        <br>High Functional Monomers
-                    </li>
-                </a>
-                <a href='#5'>
-                    <li onclick='changeColor(this)' class='5'>M Cure 樹脂
-                        <br>M Cure Resins
-                    </li>
-                </a>
-                <a href='#6'>
-                    <li onclick='changeColor(this)' class='6'>無甲苯單體
-                        <br>Toluene Free Monomers
-                    </li>
-                </a>
-            </ol>
-        </div>
+        <a href='#seven'>
+            <div class='q' onclick='changeColor(this)' style='margin-top: 0px;'>水性SBR橡膠 <br>SBR Latex</div>
+        </a>
+        <a href='#ten'>
+            <div class='q' onclick='changeColor(this)' style='margin-top: -30px;'>水性封閉型異氰酸酯交聯劑 <br>Blocked Isocyanates</div>
+        </a>
+        <a href='#eleven'>
+            <div class='q' onclick='changeColor(this)' style='margin-top: -30px;'>非離子型水性擴鏈劑 <br>Special Non-Ionic Monomer</div>
+        </a>
+        <a href='#twelve'>
+            <div class='q' onclick='changeColor(this)' style='margin-top: -30px;'>水性松香樹脂 <br>Water-Based Rosin Resin</div>
+        </a>
+        <a href='#thirteen'>
+            <div class='q' onclick='changeColor(this)' style='margin-top: -30px;'>水性增黏石油樹脂 <br>Emulsion Tackifier</div>
+        </a>
+        <a href='#six'>
+            <div class='q' onclick='changeColor(this)' style='margin-top: -30px;'>特殊乳液型壓克力添加劑 <br>Acrylic Polymer</div>
+        </a>
+        <a href='#eight'>
+            <div class='q' onclick='changeColor(this)' style='margin-top: -30px;'>濕附著力特殊單體 <br>Acrylic Monomer</div>
+        </a>
+        <a href='#nine'>
+            <div class='q' onclick='changeColor(this)' style='margin-top: -30px;'>反應型親水單體 <br>Ethoxylated Monomer</div>
+        </a>
         <a href='#two'>
-            <div class='q' id='b' onclick='changeColor(this)'>寡聚物 <br>Oligomers</div>
+            <div class='q' onclick='changeColor(this)' style='margin-top: -30px;'>水性 PU 樹脂 <br>PUD</div>
         </a>
-        <div id='oligomers'>
-            <ol>
-                <a href='#7' onclick='changeColor(this)' class='7'>
-                    <li>脂肪族聚氨酯丙烯酸酯寡聚物
-                        <br>Aliphatic Urethane Acrylate Oligomers
-                    </li>
-                </a>
-                <a href='#8' onclick='changeColor(this)' class='8'>
-                    <li>芳香族聚氨酯丙烯酸酯寡聚物
-                        <br>Aromatic Urethane Acrylate Oligomers
-                    </li>
-                </a>
-                <a href='#9' onclick='changeColor(this)' class='9'>
-                    <li>聚酯丙烯酸酯寡聚物
-                        <br>Polyester Acrylate Oligomers
-                    </li>
-                </a>
-                <a href='#10' onclick='changeColor(this)' class='10'>
-                    <li>環氧寡聚物
-                        <br>Epoxy Oligomers
-                    </li>
-                </a>
-                <a href='#11' onclick='changeColor(this)' class='11'>
-                    <li>高性能寡聚物
-                        <br>High Performance Oligomers
-                    </li>
-                </a>
-                <a href='#12' onclick='changeColor(this)' class='12'>
-                    <li>Sarbox 特種寡聚物
-                        <br>Sarbox Specialty Oligomers
-                    </li>
-                </a>
-            </ol>
-        </div>
+        <a href='#five'>
+            <div class='q' onclick='changeColor(this)' style='margin-top: -30px;'>水性PP乳液<br>Polypropylene Emulsion</div>
+        </a>
     </div>
     <div id='contentArea'>
-        <div id='one' class='title' style='margin-top:0px;'>單體 Monomers</div>
-        <div id='1' class='title' style='font-size:15px;color:#1182B1;margin-top:0px;'>單官能單體 Monofunctional Monomers</div>
-        <img src='img/monomer1.png' width='100%' style='border:1px solid gray'>
-        <div id='2' class='title' style='font-size:15px;color:#1182B1;margin-top:0px;'>雙官能單體 Difunctional Monomers</div>
-        <img src='img/monomer2.png' width='100%' style='border:1px solid gray'>
-        <div id='3' class='title' style='font-size:15px;color:#1182B1;margin-top:0px;'>三官能單體 Trifunctional Monomers</div>
-        <img src='img/monomer3.png' width='100%' style='border:1px solid gray'>
-        <div id='4' class='title' style='font-size:15px;color:#1182B1;margin-top:0px;'>高官能單體 High Functional Monomers</div>
-        <img src='img/monomer4.png' width='100%' style='border:1px solid gray'>
-        <div id='5' class='title' style='font-size:15px;color:#1182B1;margin-top:0px;'>M Cure 樹脂 M Cure Resins</div>
-        <img src='img/monomer5.png' width='100%' style='border:1px solid gray'>
-        <div id='6' class='title' style='font-size:15px;color:#1182B1;margin-top:0px;'>無甲苯單體 Toluene Free Monomers</div>
-        <img src='img/monomer6.png' width='100%' style='border:1px solid gray'>
-        <div id='two' class='title'>寡聚物 Oligomers</div>
-        <div id='7' class='title' style='font-size:15px;color:#1182B1;margin-top:0px;'>脂肪族聚氨酯丙烯酸酯寡聚物 Aliphatic Urethane Acrylate Oligomers</div>
-        <img src='img/Oligomer1-0-0.png' width='100%' style='border:1px solid gray'>
-        <div id='8' class='title' style='font-size:15px;color:#1182B1;margin-top:0px;'>芳香族聚氨酯丙烯酸酯寡聚物 Aromatic Urethane Acrylate Oligomers</div>
-        <img src='img/Oligomer1-1.png' width='100%' style='border:1px solid gray'>
-        <div id='9' class='title' style='font-size:15px;color:#1182B1;margin-top:0px;'>聚酯丙烯酸酯寡聚物 Polyester Acrylate Oligomers</div>
-        <img src='img/Oligomer2.png' width='100%' style='border:1px solid gray'>
-        <div id='10' class='title' style='font-size:15px;color:#1182B1;margin-top:0px;'>環氧寡聚物 Epoxy Oligomers</div>
-        <img src='img/Oligomer3.png' width='100%' style='border:1px solid gray'>
-        <div id='11' class='title' style='font-size:15px;color:#1182B1;margin-top:0px;'>高性能寡聚物 Sarbox Specialty Oligomers</div>
-        <img src='img/Oligomer4.png' width='100%' style='border:1px solid gray'>
-        <div id='12' class='title' style='font-size:15px;color:#1182B1;margin-top:0px;'>Sarbox 特種寡聚物 Sarbox Specialty Oligomers</div>
-        <img src='img/Oligomer5.png' width='100%' style='border:1px solid gray'>
+        
+        <div id='three' class='title' style='margin-top:30px;'>水性NBR橡膠 NBR Latex</div>
+        <img src='img/specialWater/CC146N.png' width="70%">
+
+        <div id='seven' class='title' style='margin-top:30px;'>水性SBR橡膠 SBR Latex</div>
+        <img src='img/specialWater/CC981S.png' width="70%">
+
+        <div id='ten' class='title' style='margin-top:30px;'>水性封閉型異氰酸酯交聯劑 Blocked Isocyanates</div>
+        <img src='img/specialWater/CC396.png' width="70%">
+
+        <div id='eleven' class='title' style='margin-top:30px;'>非離子型水性擴鏈劑 Special Non-Ionic Monomer</div>
+        <img src='img/specialWater/CC868.png' width="70%">
+
+        <div id='twelve' class='title' style='margin-top:30px;'>水性松香樹脂 Water-Based Rosin Resin</div>
+        <img src='img/specialWater/CC67&CC68.png' width="70%">
+
+        <div id='thirteen' class='title' style='margin-top:30px;'>水性增黏石油樹脂 Emulsion Tackifier</div>
+        <img src='img/specialWater/CC7667.png' width="70%">
+
+        <div id='six' class='title' style='margin-top:30px;'>特殊乳液型壓克力添加劑 Acrylic Polymer</div>
+        <img src='img/specialWater/CC166A.png' width="70%">
+
+        <div id='eight' class='title' style='margin-top:30px;'>濕附著力特殊單體 Acrylic Monomer</div>
+        <img src='img/specialWater/CC-MAW9.png' width="70%">
+
+        <div id="nine" class="title" style="margin-top:30px;">反應型親水單體 Ethoxylated Monomer</div>
+        <img src='img/specialWater/CC80066H.png' width="70%">        
+
+        <div id='two' class='title' style='margin-top:30px;'>水性 PU 樹脂 PUD</div>
+        <table style='margin-bottom: 10px;margin-top:10px;' id='PU'>
+            <tr>
+                <td width='80px'>牌號
+                <td width='45px'>樹脂種類</td>
+                <td width='50px'>外觀</td>
+                <td width='85px'>固成份(%)</td>
+                <td width='90px'>黏度(cps)</td>
+                <td>特性及應用</td>
+            </tr>
+        </table>
+
+        <div id='five' class='title' style='margin-top:0px;'>水性PP乳液 Polypropylene Emulsion</div>
+        <div class='title' style='font-size:15px;color:#1182B1;margin-top:0px;'>Emulsion of High Molecular Weight Modofied PP</div>
+        <img src='img/PP_01.jpg' width="70%">
+
+        <div class='title' style='font-size:15px;color:#1182B1;margin-top:30px;'>Emulsion of Modified PP Wax</div>
+        <img src='img/PP_02.jpg' width="70%">
+
         <!-- start footer Area -->
         <footer class="footer-area section-gap" style="margin-top: 20px;">
             <div class="container">
@@ -289,25 +270,164 @@ document.oncontextmenu = new Function("return false;")
 $(document).ready(function() {
     var contentH = $(window).height() - 165 - 20;
     $('#contentArea').height(contentH);
-    var contentW = $(window).width() - 240;
+    var contentW = $(window).width() - 340;
     $('#contentArea').width(contentW);
     $('table').width(contentW - 20);
     $('#oligomers').hide();
+    PU();
 })
 
 function changeColor(evt) {
     $('.check').removeClass('check');
     $(evt).addClass('check');
-    if ($(evt).hasClass("1") || $(evt).hasClass("2") || $(evt).hasClass("3") || $(evt).hasClass("4") || $(evt).hasClass("5") || $(evt).hasClass("6") || evt.id == 'a') {
+    if ($(evt).hasClass("1") || $(evt).hasClass("2") || evt.id == 'a') {
         $('#a').addClass('check');
         $('#oligomers').hide();
         $('#monomers').show();
-        // $('#leftMenu').height(460);
-    } else {
+    } else if ($(evt).attr('id')) {
         $('#b').addClass('check');
-        $('#monomers').hide();
+        // $('#monomers').hide();
         $('#oligomers').show();
-        // $('#leftMenu').height(500);
+    }
+}
+
+function PU() {
+    var first = [];
+    var second = [];
+    var third = [];
+    var four = [];
+    var five = [];
+    var six = [];
+
+    first[0] = "CC0687";
+    first[1] = "CC0689";
+    first[2] = "CC166A";
+    first[3] = "CC1688";
+    first[4] = "CC7049";
+    first[5] = "CC765";
+    first[6] = "CC7667";
+    first[7] = "CC7668A";
+    first[8] = "CC7689";
+    first[9] = "CC7967";
+    first[10] = "CC8588";
+    first[11] = "CC86332";
+    first[12] = "CC8668A";
+    first[13] = "CC86771";
+    first[14] = "CC86811";
+    first[15] = "CC8687";
+    first[16] = "CC9668A";
+    first[17] = "CC9687";
+    first[18] = "CC9688";
+
+    second[0] = "PMMA/PU hybrid";
+    second[1] = "PU";
+    second[2] = "PMMA";
+    second[3] = "PMMA/PU hybrid";
+    second[4] = "PMMA/PU hybrid";
+    second[5] = "PU";
+    second[6] = "PU";
+    second[7] = "PMMA";
+    second[8] = "PU";
+    second[9] = "PU";
+    second[10] = "PMMA/PU hybrid";
+    second[11] = "PMMA/PU hybrid";
+    second[12] = "PMMA";
+    second[13] = "PU";
+    second[14] = "PMMA/PU hybrid";
+    second[15] = "PMMA/PU hybrid";
+    second[16] = "PMMA";
+    second[17] = "PU";
+    second[18] = "PU";
+
+    third[0] = "乳白";
+    third[1] = "乳白";
+    third[2] = "乳白";
+    third[3] = "乳白";
+    third[4] = "乳白";
+    third[5] = "乳白";
+    third[6] = "乳白";
+    third[7] = "乳白";
+    third[8] = "乳白";
+    third[9] = "乳白";
+    third[10] = "乳白";
+    third[11] = "乳白";
+    third[12] = "乳白";
+    third[13] = "乳白";
+    third[14] = "乳白";
+    third[15] = "乳白";
+    third[16] = "乳白";
+    third[17] = "乳白";
+    third[18] = "乳白";
+
+    four[0] = "43";
+    four[1] = "35";
+    four[2] = "34";
+    four[3] = "39";
+    four[4] = "40";
+    four[5] = "35";
+    four[6] = "37";
+    four[7] = "42";
+    four[8] = "36";
+    four[9] = "36";
+    four[10] = "40";
+    four[11] = "41";
+    four[12] = "46";
+    four[13] = "40";
+    four[14] = "43";
+    four[15] = "40";
+    four[16] = "44";
+    four[17] = "30";
+    four[18] = "36";
+
+    five[0] = "≦100 cps";
+    five[1] = "≦100 cps";
+    five[2] = "≦100 cps";
+    five[3] = "≦100 cps";
+    five[4] = "≦100 cps";
+    five[5] = "≦100 cps";
+    five[6] = "≦100 cps";
+    five[7] = "≦100 cps";
+    five[8] = "≦100 cps";
+    five[9] = "≦100 cps";
+    five[10] = "≦250 cps";
+    five[11] = "350~500cps";
+    five[12] = "≦150 cps";
+    five[13] = "100~350cps";
+    five[14] = "≦100 cps";
+    five[15] = "≦100 cps";
+    five[16] = "≦150 cps";
+    five[17] = "≦100 cps";
+    five[18] = "≦150 cps";
+
+    six[0] = "高硬度、乾燥快、耐黃變、抗回黏、與顏料相容性佳。推薦用於無機底材(玻璃)或塑料底材(ABS、PC)等。";
+    six[1] = "韌性佳、抗回黏、耐黃變、耐水洗。推薦用於織物。";
+    six[2] = "多功能特殊水性添加劑，可有效地改進膠的內聚力，從而提高膠帶的保持力、牢度，特別是在高溫環境下有著更加明顯的效果。特別適用於低Tg、高初黏型接著劑的內聚力改善。";
+    six[3] = "高光澤、耐磨性佳、乾燥快、耐水佳。推薦用於印刷。";
+    six[4] = "高光澤、重塗性佳、耐黃變、耐鹽霧佳。推薦用於金屬(鋁)防腐烤漆。";
+    six[5] = "耐水分解性好、不黃變、耐光性好。具有強韌皮膜、屈曲性佳、賦與柔軟手感。聚丁二烯主體。";
+    six[6] = "高光澤和硬度、耐水性佳、耐化性佳、抗回黏性、耐鹽霧佳、耐黃變。推薦用於金屬(鋼材)基材烤漆。";
+    six[7] = "高光澤、抗刮性佳、耐水佳。推薦用於水性指甲油。";
+    six[8] = "乾燥快、耐黃變、抗回黏、耐化佳、耐水性佳。推薦用於水性金屬常溫用漆或防水用塗料。";
+    six[9] = "高光澤、重塗性佳、抗回黏性、密著佳、耐黃變、耐鹽霧佳。推薦用於金屬烤漆。";
+    six[10] = "耐磨抗刮、耐黃變、高光澤、高韌性、乾燥快。推薦用於皮革塗飾、紡織品含浸。";
+    six[11] = "高光澤、高硬度、對填料相容性佳、耐化性佳，可與水性硬化劑作兩液型(41 mg KOH/g)。推薦用於金屬、塑料底材。";
+    six[12] = "高光澤、抗回黏、顏料及填料分散性好。推薦用於印刷油墨。";
+    six[13] = "耐黃變、耐熱性、耐水解、接著性佳。適用於PET、PVC或金屬之上。";
+    six[14] = "耐化佳、耐黃變、高光透亮、耐水佳。推薦用於一般塑料底材之水性塗料，低級性底材PE也可使用。";
+    six[15] = "銀漿定向佳、耐黃變、耐化性佳、耐水性佳、高光澤和硬度。推薦用於塑料(ABS、PC、PMMA)基材。";
+    six[16] = "高光澤、抗回黏、砂磨性佳、滲透性佳、耐水佳。推薦用於木器塗料。";
+    six[17] = "高光澤、韌性佳、耐溶劑、不易殘膠。推薦用於水性可剝膠、研磨。";
+    six[18] = "高韌性、高光澤、耐撓曲、耐黃變、乾燥快。推薦應用於皮革塗飾或紡織品含浸。";
+
+    for (var i = 0; i < first.length; i++) {
+        $('#PU').append('<tr>' +
+            '<td>' + first[i] + '</td>' +
+            '<td>' + second[i] + '</td>' +
+            '<td>' + third[i] + '</td>' +
+            '<td>' + four[i] + '</td>' +
+            '<td>' + five[i] + '</td>' +
+            '<td style="text-align:left;">' + six[i] + '</td>' +
+            '</tr>')
     }
 }
 </script>
