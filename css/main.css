@@ -1218,7 +1218,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .ordered-list li span {
   font-weight: 300;
-  color: #777777;
+  /*color: #777777;*/
 }
 
 .ordered-list-alpha li {
@@ -1231,7 +1231,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .ordered-list-alpha li span {
   font-weight: 300;
-  color: #777777;
+  /*color: #777777;*/
 }
 
 .ordered-list-roman li {
