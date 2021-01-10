@@ -2017,7 +2017,7 @@ h1, h2, h3, h4, h5, h6 {
   position: absolute;
   display: none;
   top: 100%;
-  left: -120px;
+  left: -100px;
   z-index: 99;
   background: rgba(255, 255, 255, 0.9);
 }
