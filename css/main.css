@@ -1526,7 +1526,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .confirm-switch input:checked + label:before {
-  background: #4cd3e3;
+  /*background: #4cd3e3;*/
 }
 
 .primary-checkbox {
