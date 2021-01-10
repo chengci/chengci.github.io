@@ -2,7 +2,7 @@
 	position: fixed;
     top: 165px;
     left: 20px;
-    height: 79%;
+    height: -webkit-fill-available;
     width: 200px;
     background-color: rgb(65 116 141 / 14%);
 }
