@@ -4,7 +4,7 @@ div#aboutContent {
     width: 100%;
     top: 100px;
     left: 0;
-    height: 1100px;
+    height: 1160px;
     overflow: hidden;
     font-weight: bold;
 }
@@ -20,7 +20,7 @@ div#aboutContent {
     top: 130px;
 }
 .companyInfo3{
-    top: 950px;
+    top: 1015px;
 }
 #c1{
     height: 80px;
