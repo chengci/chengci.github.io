@@ -468,3 +468,6 @@ li.list:before {
 .newsUl::-webkit-scrollbar {
     width: 4px;
 }
+.single-service {
+    margin-top: -25px;
+}
